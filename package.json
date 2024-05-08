@@ -1,0 +1,30 @@
+{
+  "name": "posmotri_v_okno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "./node_modules/prettier/bin/prettier.cjs --check './**/*.{html,css,js}'",
+    "format": "./node_modules/prettier/bin/prettier.cjs --write './**/*.{html,css,js}'",
+    "lint": "./node_modules/stylelint/bin/stylelint.mjs **/*.css",
+    "lintfix": "./node_modules/stylelint/bin/stylelint.mjs **/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "dev": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/art0tod/posmotri_v_okno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/art0tod/posmotri_v_okno/issues"
+  },
+  "homepage": "https://github.com/art0tod/posmotri_v_okno#readme",
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "stylelint": "^16.5.0"
+  }
+}
