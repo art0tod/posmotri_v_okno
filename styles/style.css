@@ -74,6 +74,20 @@ ol {
   height: 100%;
 }
 
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  padding: 3px 1px 21px;
+  word-spacing: -22px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
 .content__list {
   position: relative;
   height: 534px;
@@ -84,11 +98,37 @@ ol {
   margin-bottom: 30px;
 }
 
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 2px 2px 4px;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+}
+
 .content__video-card {
   height: 107px;
   display: grid;
   grid-template-columns: auto 194px;
-  padding-right: 5px;
+  padding-right: 2px;
 }
 
 .content__video-card-thumbnail {
@@ -96,4 +136,15 @@ ol {
   width: 100%;
   padding: 2px;
   object-fit: cover;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  word-spacing: -6px;
 }
