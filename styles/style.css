@@ -262,7 +262,8 @@ ol {
 .search-form__checkbox:active + .search-form__pseudo-checkbox::before,
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: '';
-  position: absolute;
+  position: relative;
+  display: flex;
   width: 15px;
   height: 15px;
   inset: 1px;
