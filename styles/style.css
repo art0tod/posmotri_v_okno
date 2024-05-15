@@ -124,7 +124,6 @@ ol {
   line-height: 94%;
   text-transform: uppercase;
   padding: 3px 1px 21px;
-  word-spacing: -22px;
 }
 
 .content__accent {
@@ -161,7 +160,7 @@ ol {
 }
 
 .content__card-link_current,
-.content__video-card:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -278,11 +277,6 @@ ol {
   outline: none;
 }
 
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
-}
-
 .search-form__textfield {
   appearance: none;
   border: none;
@@ -313,7 +307,7 @@ ol {
   outline: none;
 }
 
-.search-form__label:has(.search-form__textfield:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
