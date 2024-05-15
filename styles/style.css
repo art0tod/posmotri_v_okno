@@ -40,6 +40,19 @@ ol {
   list-style: none;
 }
 
+.button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  font-family: 'Fira Sans Condensed', serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  height: 34px;
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -64,7 +77,6 @@ ol {
   flex-direction: column;
   justify-content: end;
   gap: 16px;
-  padding-top: 78px;
 }
 
 .result__video-container {
@@ -74,17 +86,10 @@ ol {
 }
 
 .result__video {
-  object-fit: fill;
+  object-fit: cover;
   object-position: center;
   width: 100%;
   height: 100%;
-}
-
-.search-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 40px;
 }
 
 .content__details {
@@ -164,16 +169,74 @@ ol {
   flex-shrink: 0;
   width: 194px;
   height: 103px;
-  object-fit: fill;
+  object-fit: cover;
   object-position: center;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 225px auto 194px;
+  gap: 40px;
+  height: 54px;
 }
 
 .search-form__fieldset {
   border: none;
+  align-self: flex-end;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+  height: 100%;
 }
 
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
+}
+
+.search-form__label {
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  appearance: none;
+  border: none;
+  color: rgb(255 255 255 / 0.7);
+  background-color: transparent;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 225px;
+  height: 27px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.search-form__submit-button {
+  margin-top: auto;
 }
